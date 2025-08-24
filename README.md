@@ -19,44 +19,6 @@ Statistical Arbitrage Strategy Using Mean Reversion and Cointegration Tests
 
 ---
 
-## 📦 Repo structure
-.
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── .gitattributes                 # (optional) if using Git LFS for *.png, *.csv
-├── stat_arb.ipynb                 # final end-to-end notebook
-│
-├── artifacts_step5/               # walk-forward & vol-targeted outputs
-│   ├── wf_tuned_oos_daily_returns.csv
-│   ├── wf_fixed_oos_daily_returns.csv
-│   ├── wf_tuned_params.csv
-│   ├── vol_targeted_daily_returns.csv
-│   ├── wf_tuned_oos_equity.png
-│   ├── wf_fixed_oos_equity.png
-│   └── vol_targeted_equity.png
-│
-├── artifacts_step6/               # evaluation plots & summary
-│   ├── step6_summary_metrics.csv
-│   ├── equity_all.png
-│   ├── drawdowns_all.png
-│   ├── rolling_sharpe.png
-│   ├── monthly_heatmap.png
-│   ├── Baseline_const_beta_returns.csv
-│   ├── WF_Tuned_quarterly_returns.csv
-│   ├── WF_Fixed_Params_returns.csv
-│   ├── Vol_targeted_10pct_returns.csv
-│   └── Portfolio_gated_voltargeted_returns.csv
-│
-└── artifacts_step7/               # risk/stress & exposures
-    ├── subperiod_metrics.csv
-    ├── rolling_beta_spy.csv
-    ├── static_multifactor_coefs.csv
-    ├── rolling_multifactor_coefs.csv
-    ├── regime_trend_table.csv        # (optional, if saved)
-    └── vix_quartile_table.csv        # (optional, if saved)
----
-
 ## 🧠 What this project does
 
 - Builds a **log-price spread** of Visa and Mastercard via OLS hedge ratio (β), validates **cointegration** (Engle–Granger ADF + Johansen).  
